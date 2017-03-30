@@ -9,9 +9,6 @@ script:
 - npm run test:examples
 deploy:
   provider: npm
-  script:
-    - npm run build
-    - "./check-package-version.sh"
   email: alexis@sgarbossa.com.ar
   api_key:
     secure: e5tOsptdgsb5Ki8RUnnuMWXZWt41C8272I2vqYTtkkExwMQwgscaYBWolHOIfBXLHISUIyFGHerxLQQcEOKBI0I4R1bA259x9rwqPO8hegQ9l95SdpwbPoiOdyx5VeXE04D6e/CK7YzCwuAF23U9TJQiq/7Vzg5NSYGimSY/QkldiemHzAxwwjfhqNGfl4lDhCRFRT91YFUp97g5wPA3vzocgYHIik0/wthUbTZfTSrrsEgk6eGOTbgusHqvFbM+g9hMdcuHLt6qMBleuGHEoe1mkL14AJM1+VH6+WGnxH8OIUB6VFPriMi5rJiT/IrUWIbB10Topo6I/GbB+JDAAii1OVSrqBFQoCXx8vim0AHhfLD2hnK/PhTJeDYTtOuYhrcxRrYRa994xnF+4t8taAsu+FkuEVPfH/crR5gAc8bsQGQzH2iOYYEldCTFkJT8Df86bBZD747aFEHD+BUOy3/h5DQS4CyZNKW/yzNi4rnHAl6vY2suV8Bo36YtBmyfwAOY4IfYHTMDOXr0GjlP2HDI6+PhOgjUQF1OKZbAvAdy8wisZ2zFM64RCQTCm6cA8Cq5yEyOQwMm5jT8eN0MHC9m2Sj1cWMU2DewgQbt4kIBCVlVKe2dh8PJNSBSYqN0o2aqvODiPvw5wIJY2CcgVGE0Msc2rZ67EoHxNzP9Xyk=
