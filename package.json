@@ -11,7 +11,7 @@
     "cover": "cross-env BABEL_ENV=commonjs istanbul cover _mocha -- --compilers js:babel-register --recursive",
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
-    "prepublish": "npm run clean && npm run lint && npm run test && npm run build"
+    "prepublish": "npm run lint && npm run test && npm run build"
   },
   "files": [
     "lib",
@@ -34,9 +34,6 @@
     "url": "https://github.com/baires/npm-module-boilerplate/issues"
   },
   "homepage": "https://github.com/baires/npm-module-boilerplate#readme",
-  "dependencies": {
-    "rimraf": "^2.6.1"
-  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.14.0",
@@ -52,6 +49,7 @@
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.3.0",
     "istanbul": "^1.0.0-alpha",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "rimraf": "^2.6.1"
   }
 }
