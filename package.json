@@ -34,6 +34,9 @@
     "url": "https://github.com/baires/npm-module-boilerplate/issues"
   },
   "homepage": "https://github.com/baires/npm-module-boilerplate#readme",
+  "dependencies": {
+    "rimraf": "^2.6.1"
+  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.14.0",
@@ -49,7 +52,6 @@
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.3.0",
     "istanbul": "^1.0.0-alpha",
-    "mocha": "^3.0.2",
-    "rimraf": "^2.6.1"
+    "mocha": "^3.0.2"
   }
 }
