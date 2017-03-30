@@ -12,7 +12,7 @@ script:
 deploy:
   provider: npm
   script: ./check-package-version.sh
-  email: it@mural.co
+  email: alexis@sgarbossa.com.ar
   api_key: $NPM_TOKEN
   on:
     all_branches: true #Builds triggered from Pull Requests will never trigger a release.
