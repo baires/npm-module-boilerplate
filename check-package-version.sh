@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO=baires/npm-module-boilerplate/
+REPO=baires/npm-module-boilerplate
 NPM_PACKAGE_VERSION=$(npm info @baires/number-formatter)
 MY_PACKAGE_VERSION=$(node -pe 'require("./package.json").version')
 
