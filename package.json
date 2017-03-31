@@ -1,5 +1,5 @@
 {
-  "name": "@jdaudier/number-formatter",
+  "name": "@baires/number-formatter",
   "version": "0.1.2",
   "engines": {
     "node": ">=4.1.1"
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jdaudier/numberFormatter.git"
+    "url": "https://github.com/baires/npm-module-boilerplate.git"
   },
   "keywords": [
     "number",
