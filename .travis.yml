@@ -1,19 +1,13 @@
 language: node_js
-
 node_js:
-  - stable
-
+- stable
 install: npm install
-
 script:
-  - npm run cover
-  
+- npm run cover
 deploy:
   provider: npm
-  script:
-  - "./check-package-version.sh"
   email: alexis@sgarbossa.com.ar
   api_key:
-    secure: Ms+PpRXtlOR/Zpd5P9aOG3m2RhjYqDDZgST+0fzP8HdF4iBBLMGAQ/rFBtXxt78fS4U2Yse7HTlpHv9bCofShbtRBHdep1ple+l71QwlVG257ZErU/osljbxB4n7OznA+I5koWGxIugI0mS87sXAqHlNOKm98+V3ctlngdE3LBk0DK5M1gxXcfMnzKqjOhliEt0pI0kcQhcvzCwgqSOkb8F08u2iZXK/DXFgTdGZQCUY04bRow25u0EsdFdRKEBQoHYxEqScdjRwUQEhohF7+nLwGk3qfAmDk1o+85f3ZtxvI3AR6EEzogK0cBoQPtulOSiSPmcHRe95R2jJx0J4225GRyIQFv5tX6uQFGSPP2XBiKGHmuJq62tY28dGxi0jqC/mBJTODoJgAQuHmpCRyCqLCEy+0WHQSp/9VQ7cj4DHxU6oIh622emR2RFb19k2BjluIGb9FGPsOa9HPwsOtZRXkA5+5hKO/4bJIaUKkbmV5kQUt3Z7hOeSDKZgcTgMjc5cece9Y71zgL1VqfrDFXz/cqkz8441YBMW4KNRBU5Au0LY1+OgvmpsSR74ZlvIk+Dkt2/JziEwVXkouD0Bw+TosIgCNx8etWUapOO0dolvSd2CXWylY2EKVWufK7rJWoAt+OmZ9xqz8EXQAffGtLI2TRFInb6DNmrp4DsCDyA=
+    secure: nLMXlifMRcTgKV6umlMUYsDKMfqLpdlJeAoGDeRoT4Pg2pAByI6mJKUzOexFzr/Q+UruNWeCQDsRGSyAilSPXzxfqNr1aOt2/p1M08738uAkI1+iJBRK55nXsPeW+7q6wFRgpJTXl0v9Dle3kD0mC2fSYTjCDdI5lD9Onuw6V78IGlOLvRXGuiJoy8EC6tUS2VPJaMdp6+PKT8JAJ++UThggbnXZZ2jnMiVi6jReAgiuVKobGOwPyKQ5Pvh9nbx47KB+7By7zI04TeLH9VpjZRKiSgRX4AtKNm9exhnTIAYeh+M56Sv8QfKcAs9/fAqa5eQDGBJB/CVXfoSfyN/GrFycKTGIZslfyoslCoPioztPU0Okl/wLhugZxhxzcex+oczoUh59JKkfnTfTCkOTymwWLxRjy5IjBZU+7aQwqXA2eLk/n/bfR6R5JRCECbwTpggMvA6G6UomEE2a7N8azyf0OJSxo5fZSMwRi7DPI0FMQg6h6qY7FfRa0zd9tLx3sTzDW7su7yD7g8aW4skv9G19/qea7TTVvKg6gJa8PPiRC/rVVEcw0LuDNd8lknA06PhueoZuZvt258F1YNqeEYwBjZH/Y5jFRjcSLdpOpVQorDiarNgAyzJ1rS0BhUB5+y9v5XqtLDryce1GE5NDVEkLTDkdpO4yuPU3G0vILOM=
   on:
-    all_branches: true
+    repo: baires/npm-module-boilerplate
