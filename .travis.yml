@@ -4,6 +4,7 @@ node_js:
 install: npm install
 script:
 - npm run cover
+- ./check-package-version.sh
 deploy:
   provider: npm
   email: alexis@sgarbossa.com.ar
