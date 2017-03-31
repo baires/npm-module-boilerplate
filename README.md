@@ -1,25 +1,32 @@
-# Why? [![Build Status](https://travis-ci.org/Travelport-Ukraine/npm-module-boilerplate.svg?branch=master)](https://travis-ci.org/Travelport-Ukraine/npm-module-boilerplate)
-:page_with_curl: Boilerplate for npm/node module. Write with ES6 - have compatibility with all node versions.
+[![Build Status](https://travis-ci.org/jdaudier/numberFormatter.svg?branch=master)](https://travis-ci.org/jdaudier/numberFormatter)  [![Coverage Status](https://coveralls.io/repos/jdaudier/numberFormatter/badge.svg?branch=master)](https://coveralls.io/r/jdaudier/numberFormatter?branch=master)
 
-This boilerplate is for people who want write code using all ES6 features ( and stage-2 ) but also want/need backwards compatibility with old node versions. 
+Number Formatter
+=========
 
-# Features
-* Build with [Babel](https://babeljs.io). (ES6 -> ES5)
-* Test with [mocha](https://mochajs.org).
-* Cover with [istanbul](https://github.com/gotwarlost/istanbul).
-* Check with [eslint](eslint.org).
-* Deploy with [Travis](travis-ci.org).
+A small library that adds commas to numbers
 
-# Commands
-- `npm run clean` - Remove `lib/` directory
-- `npm test` - Run tests. Tests can be written with ES6 (WOW!)
-- `npm test:watch` - You can even re-run tests on file changes!
-- `npm run cover` - Yes. You can even cover ES6 code.
-- `npm run lint` - We recommend using [airbnb-config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb). It's fantastic.
-- `npm run test:examples` - We recommend writing examples on pure JS for better understanding module usage.
-- `npm run build` - Do some magic with ES6 to create ES5 code.
-- `npm run prepublish` - Hook for npm. Do all the checks before publishing you module.
+## Installation
 
-# Installation
-Just clone this repo and remove `.git` folder.
+  `npm install @jdaudier/number-formatter`
 
+## Usage
+
+    var numFormatter = require('@jdaudier/number-formatter');
+
+    var formattedNum = numFormatter(35666);
+  
+  
+  Output should be `35,666`
+
+
+## Tests
+
+  `npm test`
+
+## Contributing
+
+In lieu of a formal style guide, take care to maintain the existing coding style.
+Add unit tests for any new or changed functionality. Lint and test your code.
+
+
+![img](https://getdrip.s3.amazonaws.com/uploads/image_upload/image/3314/embeddable_44acde4e-3999-48e0-b187-4762a8d1f75b.png)

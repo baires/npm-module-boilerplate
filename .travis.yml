@@ -1,14 +1,13 @@
 language: node_js
+
 node_js:
-- '7.2'
+  - stable
+
 install: npm install
+
 script:
-- chmod a+x ./check-package-version.sh
-- ./check-package-version.sh
-- npm run lint
-- npm run test
-- npm run build
-- npm run test:examples
+  - npm run cover
+
 deploy:
   provider: npm
   script:
